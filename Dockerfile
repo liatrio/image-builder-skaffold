@@ -9,7 +9,7 @@ RUN apk add --no-cache \
 		python3 \
         py3-pip
 
-ENV SKAFFOLD_VERSION 1.37.2
+ENV SKAFFOLD_VERSION 1.39.1
 RUN curl -f -Lo skaffold https://github.com/GoogleCloudPlatform/skaffold/releases/download/v${SKAFFOLD_VERSION}/skaffold-linux-amd64 && \
   chmod +x skaffold && \
   mv skaffold /usr/bin && \
@@ -23,7 +23,7 @@ RUN curl -f -Lo container-structure-test https://storage.googleapis.com/containe
   chmod +x container-structure-test && \
   mv container-structure-test /usr/bin
 
-ENV KUBECTL_VERSION 1.24.0
+ENV KUBECTL_VERSION 1.24.2
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl && \
   chmod +x ./kubectl && \
   mv ./kubectl /usr/local/bin/kubectl
