@@ -1,4 +1,4 @@
-FROM docker:20.10-dind
+FROM docker:20.10.17-dind
 
 RUN apk add --no-cache \
 		git \
@@ -7,7 +7,7 @@ RUN apk add --no-cache \
 		make \
 		groff \
 		python3 \
-        py3-pip
+    py3-pip
 
 ENV SKAFFOLD_VERSION 1.39.1
 RUN curl -f -Lo skaffold https://github.com/GoogleCloudPlatform/skaffold/releases/download/v${SKAFFOLD_VERSION}/skaffold-linux-amd64 && \
