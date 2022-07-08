@@ -1,7 +1,5 @@
 FROM docker:20.10-dind
 
-LABEL org.opencontainers.image.source https://github.com/liatrio/builder-images
-
 RUN apk add --no-cache \
 		git \
 		curl \
