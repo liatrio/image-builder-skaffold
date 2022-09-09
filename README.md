@@ -39,3 +39,5 @@ stage('Build') {
 - Version [1.11.X](https://storage.googleapis.com/container-structure-test/v1.11.0/container-structure-test-linux-amd64) of Container Structure Tests, a framework to validate the structure of a container image
 - Version [1.24.X](https://storage.googleapis.com/kubernetes-release/release/v1.24.0/bin/linux/amd64/kubectl) of kubectl, a command-line tool that allows you to run commands against Kubernetes clusters
 - Version [3.9.0](https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz) of Helm, a package manager for Kubernetes
+
+bump
